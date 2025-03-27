@@ -1,4 +1,4 @@
-# Text-gennerator-for-learning
+# Text-generator-for-learning
 A  text generation LLM training project prepared for learning.
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=PyTorch&logoColor=white)](https://pytorch.org/)
