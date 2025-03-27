@@ -106,13 +106,4 @@ NewsGenerator(
 ## License
 MIT License - See LICENSE for details
 
-This version maintains:
-1. Consistent indentation (4 spaces for code blocks)
-2. Clear section hierarchy
-3. Syntax highlighting markers (python/text)
-4. Badge alignment at top
-5. Logical flow from installation to usage
-6. Emphasis on key technical components
-
-
 
