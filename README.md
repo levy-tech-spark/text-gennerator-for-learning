@@ -32,20 +32,33 @@ pip install torch torchtext tqdm
 ```
 
 ## Dataset Preparation
-- 1.Create news_data.txt
-- 2.Format: One text sample per line
+- 1.Create a news_data.txt file with the following format:
   ```
   Breaking news: Major tech company announces breakthrough...
   Sports update: Championship game ends with historic upset...
+  Political development: New legislation passes with bipartisan support...
+  Technology update: AI system achieves human-level performance...
   ```
+- 2.Data Format Requirements:
+  - One complete news item per line
+  - Minimum 10,000 samples recommended
+  - Include at least 5 categories (e.g., sports, tech, politics)
+  - UTF-8 encoding
+  
 ## Training
 - Configure parameters in main():
   ```
-  BATCH_SIZE = 8       # Samples per batch
-  SEQ_LENGTH = 128     # Token sequence length 
-  EPOCHS = 10          # Training iterations
-  LEARNING_RATE = 1e-4 # Optimization rate
+  # Training Parameters
+  BATCH_SIZE = 8       # Number of samples per batch
+  SEQ_LENGTH = 128     # Maximum token sequence length 
+  EPOCHS = 10          # Total training iterations
+  LEARNING_RATE = 1e-4 # Initial learning rate
+  WARMUP_STEPS = 2000  # Warmup steps for learning rate
 
+  # Model Architecture
+  EMBEDDING_DIM = 512
+  NHEAD = 8
+  NUM_LAYERS = 6
   ```
 - Start training:
   ```
