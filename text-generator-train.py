@@ -128,7 +128,7 @@ def make_collate_fn(dataset):
     return collate_fn
 
 # ======================
-# 4. Training Progress
+# 5. Training Progress
 # ======================
 def train_model():
     """Main training loop with progress tracking and model saving"""
